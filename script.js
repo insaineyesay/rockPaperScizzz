@@ -13,6 +13,7 @@ let turns = [
 
 let userSelection;
 
+// TODO: Update this if you add more turns
 const combinations = [
   [{ combination: [0, 1] }, { winner: 1 }], // winner is 1
   [{ combination: [1, 0] }, { winner: 1 }], // winner is 1
