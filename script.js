@@ -5,6 +5,7 @@ const userResultImg = document.querySelector(".user_result img");
 const computerImgUrl = document.querySelector(".cpu_result img");
 
 // TODO: Enter turns for foam noodle, goat, and fiberglass.
+// TODO: This will need to be updated or restructured to allow infinite choices. 
 let turns = [
   { turnName: "rock", turnImgUrl: "images/rock.png" },
   { turnName: "paper", turnImgUrl: "images/paper.png" },
@@ -14,6 +15,7 @@ let turns = [
 let userSelection;
 
 // TODO: Update this if you add more turns
+// TODO: This needs to be updated to be dynamic for any number of turns
 const combinations = [
   [{ combination: [0, 1] }, { winner: 1 }], // winner is 1
   [{ combination: [1, 0] }, { winner: 1 }], // winner is 1
@@ -41,6 +43,7 @@ function endGame(optionImg) {
 }
 
 function checkWinner() {
+  // TODO: This will need to be updated if there are more than 3 choices. 
   let computerSelection = Math.floor(Math.random() * 3);
 
   userResultImg.src = turns[userSelection].turnImgUrl;
