@@ -4,6 +4,7 @@ const result = document.querySelector(".result");
 const userResultImg = document.querySelector(".user_result img");
 const computerImgUrl = document.querySelector(".cpu_result img");
 
+// TODO: Enter turns for foam noodle, goat, and fiberglass.
 let turns = [
   { turnName: "rock", turnImgUrl: "images/rock.png" },
   { turnName: "paper", turnImgUrl: "images/paper.png" },
